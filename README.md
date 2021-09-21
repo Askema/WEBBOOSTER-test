@@ -1,1 +1,1 @@
-# WEBBOOSTER-test
+# Тестовое задание в WebBooster
