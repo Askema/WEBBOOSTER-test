@@ -7,7 +7,7 @@ const productName = document.querySelector('.modal-form__input--product-name');
 const form = document.querySelector('modal-form');
 
 
-function myFunction(evt) {
+function openModal(evt) {
   evt.preventDefault();
   modal.classList.add('modal--open');
   const closestTitle = evt.currentTarget.closest('.catalog-item').querySelector('.catalog-item__title');
@@ -15,7 +15,7 @@ function myFunction(evt) {
 }
 
 modalButton.forEach((button) => {
-  button.addEventListener('click', myFunction);
+  button.addEventListener('click', openModal);
 });
 
 document.addEventListener('keydown', (evt) => {
@@ -31,31 +31,12 @@ modalWrapper.addEventListener('click', (evt) => {
 modal.addEventListener('click', () => {
   modal.classList.remove('modal--open');
 });
-/*
-const formSend = (onSuccess, onFail, body) => {
-  fetch(
-    'send.php',
-    {
-      method: 'POST',
-      body,
-    },
-  )
-    .then((response) => {
-      if (response.ok) {
-        onSuccess();
-        return;
-      }
-      onFail();
-    })
-    .catch(onFail);
-};
-*/
 
 async function formSend(evt) {
   evt.preventDefault();
 
   const formData = new FormData(form);
-  const response = await fetch('send.php', {
+  const response = await fetch('./send.php', {
     method: 'POST',
     body: formData,
   });

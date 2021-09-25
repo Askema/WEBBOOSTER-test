@@ -10,7 +10,7 @@ $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language');
 $mail->IsHTML(true);
 
-//Письмо от:
+//Письмо от
 $mail->setFrom('readmanga8@gmail.com',);
 //Кому
 $mail->addAddress('askema@mail.ru');
