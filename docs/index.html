@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.min.css" rel="stylesheet preload" as="style">
+  <title>Document</title>
+</head>
+
+<body class="page-body">
+  <header>
+
+  </header>
+  <main class="page-main">
+    <section class="catalog">
+      <div class="catalog__wrapper">
+        <article class="catalog-item">
+          <img class="catalog-item__img" src="img/chair.jpg" width="315" height="488">
+          <div class="catalog-item__wrapper">
+            <div class="catalog-item__info">
+              <a href="#" class="catalog-item__title-link">
+                <h2 class="catalog-item__title">Кресло руководителя КТ-1, черная натуральная кожа</h2>
+              </a>
+            </div>
+            <div class="catalog-item__buy">
+              <span class="catalog-item__price">9 900 ₽</span>
+              <a href="#" class="catalog-item__button btn">Купить</a>
+            </div>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img class="catalog-item__img" src="img/chair.jpg" width="315" height="488">
+          <div class="catalog-item__wrapper">
+            <div class="catalog-item__info">
+              <a href="#" class="catalog-item__title-link">
+                <h2 class="catalog-item__title">Кресло руководителя КТ-2, черная натуральная кожа</h2>
+              </a>
+            </div>
+            <div class="catalog-item__buy">
+              <span class="catalog-item__price">9 900 ₽</span>
+              <a href="#" class="catalog-item__button btn">Купить</a>
+            </div>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img class="catalog-item__img" src="img/chair.jpg" width="315" height="488">
+          <div class="catalog-item__wrapper">
+            <div class="catalog-item__info">
+              <a href="#" class="catalog-item__title-link">
+                <h2 class="catalog-item__title">Кресло руководителя КТ-3, черная натуральная кожа</h2>
+              </a>
+            </div>
+            <div class="catalog-item__buy">
+              <span class="catalog-item__price">9 900 ₽</span>
+              <a href="#" class="catalog-item__button btn">Купить</a>
+            </div>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <img class="catalog-item__img" src="img/chair.jpg" width="315" height="488">
+          <div class="catalog-item__wrapper">
+            <div class="catalog-item__info">
+              <a href="#" class="catalog-item__title-link">
+                <h2 class="catalog-item__title">Кресло руководителя КТ-4, черная натуральная кожа</h2>
+              </a>
+            </div>
+            <div class="catalog-item__buy">
+              <span class="catalog-item__price">9 900 ₽</span>
+              <a href="#" class="catalog-item__button btn">Купить</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="modal">
+      <div class="modal__wrapper">
+        <form class="modal-form" action="send.php" method="post" enctype="multipart/form-data" autocomplete="off">
+          <div class="modal-form__item">
+            <label for="name" class="modal-form__label">Имя:</label>
+            <input class="modal-form__input" type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+          </div>
+          <div class="modal-form__item">
+            <label for="tel" class="modal-form__label">Телефон:</label>
+            <input class="modal-form__input" type="tel" id="tel" name="tel" placeholder="+7 XXX  XXX XX XX" required>
+          </div>
+          <div class="modal-form__item">
+            <label for="email" class="modal-form__label">Email:</label>
+            <input class="modal-form__input" type="email" id="email" name="email" placeholder="Ваш email" required>
+          </div>
+          <div class="modal-form__item">
+            <label for="product-name" class="modal-form__label">Название товара:</label>
+            <input class="modal-form__input modal-form__input--product-name" type="text" id="product-name"
+              name="product-name" disabled>
+          </div>
+          <button class="modal-form__submit btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
